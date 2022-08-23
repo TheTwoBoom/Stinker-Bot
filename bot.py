@@ -4,6 +4,7 @@ import json
 intents = discord.Intents.default()
 intents.message_content = True
 stinker = {}
+bot_token = ""
 class MyClient(discord.Client):
     async def on_message(self, message):
         if message.author.id == self.user.id:
